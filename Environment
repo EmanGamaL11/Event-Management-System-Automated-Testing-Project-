@@ -1,0 +1,14 @@
+{
+  "name": "EventManagementEnv",
+  "values": [
+    { "key": "baseUrl", "value": "http://localhost:5000/api", "enabled": true },
+    { "key": "adminEmail", "value": "eman2002@engo.com", "enabled": true },
+    { "key": "adminPassword", "value": "eman2002", "enabled": true },
+    { "key": "userEmail", "value": "testuser@example.com", "enabled": true },
+    { "key": "userPassword", "value": "testpass123", "enabled": true },
+    { "key": "adminToken", "value": "", "enabled": true },
+    { "key": "userToken", "value": "", "enabled": true },
+    { "key": "eventId", "value": "", "enabled": true }
+  ],
+  "_postman_variable_scope": "environment"
+}
