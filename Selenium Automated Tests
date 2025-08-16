@@ -1,7 +1,6 @@
 {
   "info": {
     "name": "Event Management API Tests",
-    "_postman_id": "b3a8b9a4-5678-4c32-9b4a-postman-col",
     "description": "Covers all Event Management System API endpoints with positive and one negative test case.",
   },
   "item": [
