@@ -64,7 +64,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"email\": \"{{tt@engo.com}}\",\n  \"password\": \"{{tt123}}\"\n}"
+          "raw": "{\n  \"email\": \"{{rr@engo.com}}\",\n  \"password\": \"{{rr123}}\"\n}"
         },
       },
       "event": [
