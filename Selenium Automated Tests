@@ -1,0 +1,74 @@
+{
+  "info": {
+    "name": "Event Management API Tests",
+    "_postman_id": "b3a8b9a4-5678-4c32-9b4a-postman-col",
+    "description": "Covers all Event Management System API endpoints with positive and one negative test case.",
+  },
+  "item": [
+    {
+      "name": "1 - Register User",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"ramy\": \"testuser\",\n  \"email\": \"{{rr@engo.com}}\",\n  \"password\": \"{{rr123}}\"\n}"
+        },
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('User registered or already exists', function () {",
+              "    pm.expect(pm.response.code).to.be.oneOf([201, 400]);",
+              "});"
+          }
+        }
+      ]
+    },
+    {
+      "name": "2 - Login Admin",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"{{rr@engo.com}}\",\n  \"password\": \"{{rr123}}\"\n}"
+        },
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Admin login successful', function () {",
+              "    pm.expect(pm.response.code).to.eql(200);",
+              "    pm.environment.set('adminToken', pm.response.json().token);",
+              "});"
+            ],
+          }
+        }
+      ]
+    },
+    {
+      "name": "3 - Login User",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"{{mm@engo.com}}\",\n  \"password\": \"{{mm123}}\"\n}"
+        },
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('User login successful', function () {",
+              "    pm.expect(pm.response.code).to.eql(200);",
+              "    pm.environment.set('userToken', pm.response.json().token);",
+              "});"
+          }
+        }
+      ]
+    },
+
