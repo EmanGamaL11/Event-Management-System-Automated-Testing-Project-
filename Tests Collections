@@ -41,7 +41,6 @@
           "mode": "raw",
           "raw": "{\n  \"Email \": \"{{mm@engo.com}}\",\n  \"password\": \"{{mm123}}\"\n}"
         },
-        "url": { "raw": "{{baseUrl}}/auth/login", "host": ["{{baseUrl}}"], "path": ["auth","login"] }
       },
       "event": [
         {
