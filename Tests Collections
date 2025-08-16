@@ -13,9 +13,8 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"username\": \"testuser\",\n  \"email\": \"{{userEmail}}\",\n  \"password\": \"{{userPassword}}\"\n}"
+          "raw": "{\n  \"ramy\": \"testuser\",\n  \"email\": \"{{rr@engo.com}}\",\n  \"password\": \"{{rr123}}\"\n}"
         },
-        "url": { "raw": "{{baseUrl}}/auth/register", "host": ["{{baseUrl}}"], "path": ["auth","register"] }
       },
       "event": [
         {
