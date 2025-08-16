@@ -32,7 +32,7 @@
         "method": "POST",
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"email\": \"{{rr@engo.com}}\",\n  \"password\": \"{{rr123}}\"\n}"
+          "raw": "{\n  \"email\": \"{{mm@engo.com}}\",\n  \"password\": \"{{mm123}}\"\n}"
         },
       },
       "event": [
@@ -55,7 +55,7 @@
         "method": "POST",
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"email\": \"{{mm@engo.com}}\",\n  \"password\": \"{{mm123}}\"\n}"
+          "raw": "{\n  \"email\": \"{{rr@engo.com}}\",\n  \"password\": \"{{rr123}}\"\n}"
         },
       },
       "event": [
